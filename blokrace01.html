@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Tutorial</title>
+    <style>
+        body{
+            background-color: rgb(138, 138, 255);
+        }
+        .div_1{
+            position:relative;
+            border:solid;
+            border-radius:10px;
+            height:30px;
+            width:45px;
+            animation: div_1 2.2s linear infinite;
+            top:80px;
+            background-color:rgb(138,138,255);
+        }
+        @keyframes div_1{
+            0%{left: 50px;}
+            100%{left:1500px;}
+        }
+        .tutorial{
+            font-size:60px;
+            text-underline-position: below;
+            font-weight:bold;
+            font-style:oblique;
+            font-family:'Trebuchet MS';
+        }
+        .code-element{
+            display: block;
+            position:absolute;
+            left:100px;
+            border:solid 1px;
+            background-color: black;
+            color:white;
+        }
+        .div_01{
+            position:relative;
+            top:100px;
+        }
+        .code-element_01{
+            display: block;
+            position:absolute;
+            left:100px;
+            border:solid 1px;
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_1"></div>
+    <br>
+    <p class="tutorial">Tutorial</p>
+    <br>
+    <p>The @keyframes rule in CSS</p>
+    <br>
+    <p>Your average block of CSS looks something like this:</p>
+    <pre>
+        <code class="code-element">
+            .class{
+                background-color:red;
+                color:orange;
+                position:relative;
+                border:solid 1px;
+            }
+        </code>
+    </pre>
+    <div class="div_01">
+    <p>But what if you want the ".class" class to move?
+        Well, you can use the @keyframes rule to move it.
+    </p>
+    <br>
+    <br>
+    <h1>What even are keyframes?</h1>
+    <p>Keyframes is a rule in CSS used to move things around.
+        For example, copy-and-paste this code into your CSS file and see how it works:
+    </p>
+    <br>
+    <pre>
+        <code class="code-element_01">
+            .class{
+                animation:keyframe 3s infinite;
+            }
+            @keyframes keyframe{
+                0%{font-size:50px;}
+                100%{font-size:100px;}
+            }
+        </code>
+    </pre>
+    </div>
+</body>
+</html>
